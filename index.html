@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- libreria bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
     <!-- Iconos bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Tostify -->
@@ -11,11 +15,85 @@
 
     <title>Ecomerce | Alacachufleta</title>
 </head>
-<body>
+<body id="inicio">
+    <header class="header">
+        <nav class="header__nav navbar navbar-expand-lg navbar-light fixed-top py-3">
+          <div class="header__nav--container container-fluid mx-5">
+            <img class="header__nav--container-logo d-block" src="../img/logo.jpg" alt="logo"/>
+            <button class="header__nav--container-btnMovil navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="header__nav--container-menu collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="menu navbar-nav me-auto mb-2 mb-lg-0 mx-5 text-body-secondary">
+                <li class="menu__li nav-item mx-2">
+                  <a class="menu__li--link nav-link fs-4" href="#inicio">Inicio</a>
+                </li>
+                <!--------------------------------------------------------------------------------------->
+                <li class="menu__li nav-item dropdown mx-2">
+                  <a class="menu__li--link nav-link dropdown-toggle fs-4" href="#productos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nuestros Productos
+                  </a>
+                  <!-- menu categorias -->
+                  <ul class="dropdown-menu">
+                    <li><a id="todos" class="btn_categoria dropdown-item " href="#productos"><i class="bi bi-hand-index-thumb mx-2"></i>Todos los Productos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="conjuntos" value="conjunto" class="btn_categoria dropdown-item " href="#productos"><i class="bi bi-hand-index-thumb mx-2"></i>Conjunto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="top" class="btn_categoria dropdown-item " href="#productos"><i class="bi bi-hand-index-thumb mx-2"></i>Top</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="bombis" class="btn_categoria dropdown-item " href="#productos"><i class="bi bi-hand-index-thumb mx-2"></i>Bombis</a></li>
+                    
+                  </ul>
+                </li>
+                <!--------------------------------------------------------------------------------------->
+                <li class="menu__li nav-item mx-2">
+                  <a class="menu__li--link nav-link fs-4" href="#preguntas">Preguntas Frecuentes</a>
+                </li>
+              </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btnCarrito btn btn-dark " data-bs-toggle="modal" data-bs-target="#miModal">
+                <!-- carrito -->
+                <i class="bi bi-cart4 text-dark fs-4 " id="btnCarrito"></i><span id="contadorCarrito" class="contadorCarrito text-dark fs-4">0</span></button>
+    
+            </div>
+          </div>
+        </nav>
+    </header>
+    
+    <!-- Modal -->
+    <div class="carrito modal fade" id="miModal" tabindex="-1" aria-labelledby="#modalTitle" aria-hidden="true">
+        <div class="carrito__cont modal-dialog modal-xl">
+        <div class="carrito__cont--cont modal-content">
+            <div class="carrito__cont--cont-header modal-header">
+            <h5 class="carrito__title modal-title fs-3" id="#modalTitle">Su Carrito</h5>
+            <button type=" button" class="carrito__btnClose btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="carrito__cont--cont-body modal-body" id="carritoContenedor">
+            <!--  aqui va la carga de productos al caarrito desde js  -->
+
+            </div>
+            
+            <div class="carrito__cont--cont-footer modal-footer justify-content-between">
+            <p class="footer__precio fw-bold fs-3">Precio Total: $ <span id="precioTotal">0</span> </p>
+            <div class="footer__botones">
+                <button id="vaciarCarrito" type="button" class="footer__btnVaciar btn btn-danger">Vaciar Carrito</button>
+                <button id="confirmarCompra" type="button" class="footer__btnConfirmar btn btn-secondary">Confirmar Compra</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
    
     <!-- sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
     <!-- Tostify -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+    <!-- libreria bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>  
 </body>
 </html>
