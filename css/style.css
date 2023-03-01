@@ -1,0 +1,44 @@
+.header__nav {
+  background: rgb(250, 243, 229);
+  box-shadow: 0px 2px 5px rgb(154, 153, 153);
+}
+.header__nav--container-logo {
+  border-radius: 100%;
+  width: 8%;
+  height: 8%;
+}
+.header__nav--container-menu .btnCarrito {
+  background: rgb(250, 243, 229);
+}
+
+/* menor igual 576px*/
+/* menor igual 768px*/
+@media only screen and (max-width: 768px) {
+  .header__nav--container-logo {
+    width: 20%;
+    height: 20%;
+  }
+}
+/* mayor igual 992px*/
+@media only screen and (max-width: 992px) {
+  .header__nav--container-logo {
+    width: 15%;
+    height: 15%;
+  }
+}
+/* menor igual 1200px*/
+@media only screen and (max-width: 1200px) {
+  .header__nav--container-logo {
+    width: 12%;
+    height: 12%;
+  }
+}
+/* menor igual 1400px*/
+@media only screen and (max-width: 1400px) {
+  .header__nav--container-logo {
+    width: 12%;
+    height: 12%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

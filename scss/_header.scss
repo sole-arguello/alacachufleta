@@ -1,0 +1,18 @@
+.header{
+    &__nav{
+        background: map-get($fondos , fondo-1 );
+        box-shadow: map-get($sombras, sombra-1 );
+        &--container{
+            &-logo{
+                border-radius: 100%;
+                width: 8%;
+                height: 8%;
+            }
+            &-menu{
+                .btnCarrito{
+                    background: map-get($fondos , fondo-1 ); 
+                }
+            }
+        }
+    }
+}
