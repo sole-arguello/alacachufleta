@@ -1,9 +1,10 @@
 $fondos: (
-    fondo-1: rgb(250, 243, 229)
+    fondo-1: rgb(250, 243, 229),
+    fondo-2: rgb(240, 225, 200)
 );
 
 $bordes: (
-
+    borde-1: 1px solid,
 );
 
 $color-text: (
@@ -11,7 +12,8 @@ $color-text: (
 );
 
 $sombras: (
-    sombra-1: 0px 2px 5px rgb(154, 153, 153)
+    sombra-1: 0px 2px 5px rgb(154, 153, 153),
+    sombra-2: 2px 6px 3px 3px rgba(0, 0, 0, 0.3)
 );
 
 $efectos: (

@@ -1,15 +1,44 @@
 /* menor igual 576px*/
 @media only screen and (max-width: 576px){
-    // .header{
-    //     &__nav{
-    //         &--container{
-    //             &-logo{
-    //                 width: 20%;
-    //                 height: 20%;
-    //             }
-    //         }
-    //     }
-    // }
+    main{
+        .productos{
+            max-width: 400px;
+            margin: 80px;
+            
+            .productos__card{
+                max-width: 100%;
+                .producto__card--img{
+                    max-width: 100%;
+
+                }
+                .productos__card--encabezado{
+
+                    .productos__contenedor{
+                        width: 100%;
+                        gap: 10px;
+                        .productos__contenedor--titulo{
+    
+                        }
+                        .productos__contenedor--categoria{
+                            
+                        }
+                    }
+                    .productos_card--precio{
+    
+                    }
+                }
+                .productos__card--pie{
+                    
+                    .productos__card--descr{
+    
+                    }
+                    .producto__card--btn{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
 }
 /* menor igual 768px*/
 @media only screen and (max-width: 768px){

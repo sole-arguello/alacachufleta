@@ -11,7 +11,56 @@
   background: rgb(250, 243, 229);
 }
 
+main {
+  margin-top: 22%;
+}
+main .productos .productos__card {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+main .productos .productos__card .producto__card--img {
+  border-radius: 10px 10px 0 0;
+}
+main .productos .productos__card .productos__card--encabezado {
+  border: 1px solid blue;
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+main .productos .productos__card .productos__card--encabezado .productos__contenedor {
+  border: 1px solid orange;
+  display: flex;
+}
+main .productos .productos__card .productos__card--pie {
+  padding: 0 10px 10px 10px;
+}
+main .productos .productos__card .productos__card--pie .producto__card--btn {
+  border-radius: 5%;
+  background: rgb(240, 225, 200);
+}
+
 /* menor igual 576px*/
+@media only screen and (max-width: 576px) {
+  main .productos {
+    max-width: 400px;
+    margin: 80px;
+  }
+  main .productos .productos__card {
+    max-width: 100%;
+  }
+  main .productos .productos__card .producto__card--img {
+    max-width: 100%;
+  }
+  main .productos .productos__card .productos__card--encabezado .productos__contenedor {
+    width: 100%;
+    gap: 10px;
+  }
+  main .productos .productos__card .productos__card--pie .producto__card--btn {
+    width: 45%;
+  }
+}
 /* menor igual 768px*/
 @media only screen and (max-width: 768px) {
   .header__nav--container-logo {
