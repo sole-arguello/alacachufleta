@@ -4,89 +4,129 @@
 }
 .header__nav--container-logo {
   border-radius: 100%;
-  width: 8%;
-  height: 8%;
+  width: 20%;
+  height: 20%;
+}
+.header__nav--container-menu {
+  font-size: 1.5rem;
 }
 .header__nav--container-menu .btnCarrito {
   background: rgb(250, 243, 229);
 }
 
 main {
-  margin-top: 22%;
+  margin-top: 20%;
 }
 main .productos .productos__card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   padding: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
+  margin: 15px auto;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
 main .productos .productos__card .producto__card--img {
   border-radius: 10px 10px 0 0;
 }
 main .productos .productos__card .productos__card--encabezado {
-  border: 1px solid blue;
   display: flex;
+  font-size: 1.5rem;
   padding: 10px 10px 0 10px;
 }
 main .productos .productos__card .productos__card--encabezado .productos__contenedor {
-  border: 1px solid orange;
+  width: 100%;
   display: flex;
+  gap: 10px;
+}
+main .productos .productos__card .productos__card--encabezado .productos_card--precio {
+  font-weight: 600;
 }
 main .productos .productos__card .productos__card--pie {
   padding: 0 10px 10px 10px;
 }
+main .productos .productos__card .productos__card--pie .productos__card--descr .productos__card--desc-intro {
+  font-weight: 600;
+}
 main .productos .productos__card .productos__card--pie .producto__card--btn {
+  width: 45%;
   border-radius: 5%;
   background: rgb(240, 225, 200);
 }
 
 /* menor igual 576px*/
-@media only screen and (max-width: 576px) {
-  main .productos {
-    max-width: 400px;
-    margin: 80px;
-  }
-  main .productos .productos__card {
-    max-width: 100%;
-  }
-  main .productos .productos__card .producto__card--img {
-    max-width: 100%;
-  }
-  main .productos .productos__card .productos__card--encabezado .productos__contenedor {
-    width: 100%;
-    gap: 10px;
-  }
-  main .productos .productos__card .productos__card--pie .producto__card--btn {
-    width: 45%;
-  }
-}
 /* menor igual 768px*/
-@media only screen and (max-width: 768px) {
-  .header__nav--container-logo {
-    width: 20%;
-    height: 20%;
-  }
-}
-/* mayor igual 992px*/
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) {
   .header__nav--container-logo {
     width: 15%;
     height: 15%;
   }
+  main .productos {
+    display: flex;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+  }
+  main .productos .productos__card {
+    width: 30%;
+    margin: 1rem;
+    flex: 1 1 45%;
+  }
+  main .productos .productos__card .productos__card--pie .producto__card--btn {
+    width: 50%;
+  }
 }
+/* mayor igual 992px*/
 /* menor igual 1200px*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header__nav--container-logo {
     width: 12%;
     height: 12%;
   }
+  main {
+    margin-top: 15%;
+  }
+  main .productos {
+    padding: 0 5rem;
+  }
+  main .productos .productos__card {
+    width: 10%;
+    margin: 2rem;
+    flex: 1 1 25%;
+  }
 }
 /* menor igual 1400px*/
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .header__nav--container-logo {
-    width: 12%;
-    height: 12%;
+    width: 10%;
+    height: 10%;
+  }
+  main .productos {
+    padding: 0 2rem;
+  }
+  main .productos .productos__card {
+    width: 20%;
+    margin: 1rem;
+    flex: 1 1 20%;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .header__nav--container-logo {
+    width: 8%;
+    height: 8%;
+  }
+  .header__nav--container-menu {
+    font-size: 2rem;
+  }
+  main {
+    margin-top: 10%;
+  }
+  main .productos {
+    padding: 0 10rem;
+  }
+  main .productos .productos__card {
+    width: 10%;
+    margin: 2rem;
+    flex: 1 1 20%;
   }
 }
 

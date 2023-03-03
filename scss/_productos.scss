@@ -1,45 +1,39 @@
 main{
-    margin-top: 22%;
-    .productos{
-        //max-width: 1300px;
-        //margin: 60px auto;
-        //display: flex;
-        //justify-content: space-between;
-        //flex-wrap: wrap;
-        
+    margin-top: 20%;
+    .productos{        
         .productos__card{
-            //max-width: 20%;
-            // display: flex;
-            // flex-direction: column;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
             border-radius: 10px;
             padding: 10px;
-            margin: 10px;
-            margin-bottom: 20px;
+            margin: 15px auto;
             box-shadow: map-get($sombras, sombra-2 );
             .producto__card--img{
-               //max-width: 100%;
                border-radius: 10px 10px 0 0;
             }
             .productos__card--encabezado{
-                border: 1px solid blue;
                 display: flex;
+                font-size: 1.5rem;
                 padding: 10px 10px 0 10px;
-                //width: 100%;
                 .productos__contenedor{
-                    border: 1px solid orange;
-                    //width: 100%;
+                    width: 100%;
                     display: flex;
-                    //gap: 10px;
-                    .productos__contenedor--titulo{}
-                    .productos__contenedor--categoria{}
+                    gap: 10px;
                 }
-                .productos_card--precio{}
+                .productos_card--precio{
+                    font-weight: 600;
+                }
             }
             .productos__card--pie{
                 padding: 0 10px 10px 10px;
-                .productos__card--descr{}
+                .productos__card--descr{
+                    .productos__card--desc-intro{
+                        font-weight: 600;
+                    }
+                }
                 .producto__card--btn{
-                    //width: 70%;
+                    width: 45%;
                     border-radius: 5%;
                     background: map-get($fondos, fondo-2 );           }
             }
