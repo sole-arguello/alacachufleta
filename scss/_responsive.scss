@@ -12,17 +12,19 @@
         }
     }
     main{
-      .productos{
-            display: flex;
-            padding: 0 2rem;
-            flex-wrap: wrap;
-            &__card{
-                width: 30%;
-                margin: 1rem;
-                flex: 1 1 45%;
-                &--pie{
-                    .producto__card--btn{
-                        width: 50%;
+    .seccion__productos{
+        .productos{
+                display: flex;
+                padding: 0 2rem;
+                flex-wrap: wrap;
+                &__card{
+                    width: 30%;
+                    margin: 1rem;
+                    flex: 1 1 45%;
+                    &--pie{
+                        .producto__card--btn{
+                            width: 50%;
+                        }
                     }
                 }
             }
@@ -50,14 +52,20 @@
     }
     main{
         margin-top: 15%;
-      .productos{
-            padding: 0 5rem;            
-            &__card{
-                width: 10%;
-                margin: 2rem;
-                flex: 1 1 19%;
+        .seccion__productos{
+
+            .categoria{
+                font-size: 2.5rem;
             }
-        }
+            .productos{
+                    padding: 0 5rem;            
+                    &__card{
+                        width: 19%;
+                        margin: 1rem;
+                        flex: 1 1 19%;
+                    }
+            }
+        }    
     }
 }
 
@@ -74,15 +82,17 @@
         }
     }
     main{
-        .productos{
-              padding: 0 2rem;
-              
-              &__card{
-                  width: 10%;
-                  margin: 2rem;
-                  flex: 1 1 20%;
-              }
-          }
+    .seccion__productos{
+            .productos{
+                padding: 0 2rem;
+                
+                &__card{
+                    width: 10%;
+                    margin: 2rem;
+                    flex: 1 1 20%;
+                }
+            }
+        }
       }
 }
 
@@ -102,10 +112,18 @@
     }
     main{
         margin-top: 10%;
-        .productos{
-              padding: 0 10rem;
-          }
-      }
+        .seccion__productos{
+            .titulo{
+                font-size: 3rem;
+            }
+            .categoria{
+                font-size: 3.5rem;
+            }
+            .productos{
+                padding: 0 10rem;
+            }
+        }
+    }
 }
 
 

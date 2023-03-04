@@ -143,33 +143,30 @@ const pintarCard = (categoria) => {
         const {id, precio, titulo, img }= producto
         //INYECTO LAS CARD EN EL DOM
         const content = document.createElement("div")
-        content.classList.add("productos__contenedorGral--contCard", "col")
-        content.innerHTML = `
-        <div class="productos" >
-            <img class="producto__card--img" src="./img/conjunto1.jpg" alt="imagen del producto">
+        content.classList.add("productos__card")
+        content.innerHTML = ` 
+
+            <img class="producto__card--img" src="${img}" alt="imagen del producto">
+
             <div class="productos__card--encabezado">
-    
-            <div class="productos__contenedor">
-                <p class="productos__contenedor--titulo">conjunto</p>
-                <p class="productos__contenedor--categoria">encaje</p>                   
+                <p class="productos__contenedor--titulo">${titulo}</p>
+                <p class="productos_card--precio">$${precio}</p> 
             </div>
-    
-            <p class="productos_card--precio">$1000</p> 
-    
-            </div>
+
             <hr>
+
             <div class="productos__card--pie">
-            <p class="productos__card--descr">Los talles disponibles son
-                <span class="productos__card--desc-intro">
-                S - M - L - XL
-                </span>
-                y los podes elejir en 
-                <span class="productos__card--desc-intro">Blanco - Negro - Gris - 
-                Beige - Rojo - Fuxia - Estampados</span>. A consultar disponibles</p>
-            <button class="producto__card--btn">Agregar al carrito</button>
+                <p class="productos__card--descr">Los talles disponibles son
+                    <span class="productos__card--desc-intro">S - M - L - XL</span>
+                    y los podes elejir en 
+                    <span class="productos__card--desc-intro">
+                    Blanco - Negro - Gris - Beige - Rojo - Fuxia - Estampados.
+                    </span> 
+                    A consultar disponibles
+                </p>
+                <button class="producto__card--btn" id=${id}>Agregar al carrito</button>
             </div>
-  
-        </div>   
+    
         `
         contenedorShop.appendChild(content)
         //EVENTO QUE ESCUCHA AL BOTON AGRAGAR PRODUCTOS
@@ -198,20 +195,20 @@ const pintarProductosEnCarrito = () =>{
         const contItemsCarrito = document.createElement("div")
         contItemsCarrito.classList.add("carrito__body", "carritoBody")
         contItemsCarrito.innerHTML = `
-            <img class="body__img" src="${img }">
-            <div class="body__info">
-                <p class="body__producto pt-lg-5 fs-5">${titulo}</P>
-                <p class="body__precio  pt-lg-5 fs-5">Precio: <span class="fw-semibold">$${precio}</span></p>          
+            // <img class="body__img" src="${img }">
+            // <div class="body__info">
+            //     <p class="body__producto pt-lg-5 fs-5">${titulo}</P>
+            //     <p class="body__precio  pt-lg-5 fs-5">Precio: <span class="fw-semibold">$${precio}</span></p>          
         
-                <div class="body__cant  pt-lg-5 d-flex">
-                    <span id="restar${id}" class="restar pt-2" ><i class="bi bi-dash-square"></i></span>
-                    <span  class="num px-2 fs-3 pb-5" id="cantidad">${cantidad}</span> 
-                    <span id ="sumar${id}" class="signos pt-2" ><i class="bi bi-plus-square"></i></span>
-                </div>
-                <p class="body__subtototal pt-lg-5 fs-5">Sub-total: <span class="fw-semibold text-center" id="cantidad"> $${cantidad * precio}</span></p>
+            //     <div class="body__cant  pt-lg-5 d-flex">
+            //         <span id="restar${id}" class="restar pt-2" ><i class="bi bi-dash-square"></i></span>
+            //         <span  class="num px-2 fs-3 pb-5" id="cantidad">${cantidad}</span> 
+            //         <span id ="sumar${id}" class="signos pt-2" ><i class="bi bi-plus-square"></i></span>
+            //     </div>
+            //     <p class="body__subtototal pt-lg-5 fs-5">Sub-total: <span class="fw-semibold text-center" id="cantidad"> $${cantidad * precio}</span></p>
             
-            </div>
-            <a id="eliminarDelCarrito${id}" class="body__btnElim"><i class="bi bi-trash3 icono"></i></a> 
+            // </div>
+            // <a id="eliminarDelCarrito${id}" class="body__btnElim"><i class="bi bi-trash3 icono"></i></a> 
     
         `
         contenedorCarrito.appendChild(contItemsCarrito)

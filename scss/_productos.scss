@@ -1,40 +1,46 @@
 main{
     margin-top: 20%;
-    .productos{        
-        &__card{
-            width: 70%;
-            @include flex(column);
-            @include estilos(15px auto, 10px, 10px);
-            box-shadow: map-get($sombras, sombra-2 );
-            &--img{
-               border-radius: 10px 10px 0 0;
-            }
-            &--encabezado{
-                display: flex;
-                font-size: 1.5rem;
-                padding: 10px 10px 0 10px;
-                .productos__contenedor{
-                    display: flex;
-                    width: 100%;
-                    gap: 10px;
+
+    .seccion__productos{
+        .titulo{
+            margin-left: 2rem;
+        }
+        .categoria{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .productos{
+            &__card{
+                width: 70%;
+                @include flex(column);
+                @include estilos(15px auto, 10px, 10px);
+                box-shadow: map-get($sombras, sombra-2 );
+                &--img{
+                border-radius: 10px 10px 0 0;
                 }
-                .productos_card--precio{
-                    font-weight: 600;
-                }
-            }
-            &--pie{
-                padding: 0 10px 10px 10px;
-                .productos__card--descr{
-                    .productos__card--desc-intro{
+                &--encabezado{
+                    @include justify(space-between);
+                    font-size: 1.5rem;
+                    padding: 10px 10px 0 10px;
+                    .productos_card--precio{
                         font-weight: 600;
                     }
                 }
-                .producto__card--btn{
-                    width: 45%;
-                    border-radius: 5%;
-                    background: map-get($fondos, fondo-2 );
+                &--pie{
+                    padding: 0 10px 10px 10px;
+                    .productos__card--descr{
+                        .productos__card--desc-intro{
+                            font-weight: 600;
+                        }
+                    }
+                    .producto__card--btn{
+                        width: 45%;
+                        border-radius: 5%;
+                        background: map-get($fondos, fondo-2 );
+                    }
                 }
             }
-        }
+        }     
+
     }
 }
