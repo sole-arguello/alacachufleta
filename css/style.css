@@ -21,9 +21,9 @@ main .productos__card {
   width: 70%;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  padding: 10px;
   margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
 main .productos__card--img {
@@ -35,8 +35,8 @@ main .productos__card--encabezado {
   padding: 10px 10px 0 10px;
 }
 main .productos__card--encabezado .productos__contenedor {
-  width: 100%;
   display: flex;
+  width: 100%;
   gap: 10px;
 }
 main .productos__card--encabezado .productos_card--precio {
@@ -54,7 +54,6 @@ main .productos__card--pie .producto__card--btn {
   background: rgb(240, 225, 200);
 }
 
-/* menor igual 576px*/
 /* menor igual 768px*/
 @media only screen and (min-width: 768px) {
   .header__nav--container-logo {
@@ -91,7 +90,7 @@ main .productos__card--pie .producto__card--btn {
   main .productos__card {
     width: 10%;
     margin: 2rem;
-    flex: 1 1 25%;
+    flex: 1 1 19%;
   }
 }
 /* mayor igual 1400px*/
@@ -104,8 +103,8 @@ main .productos__card--pie .producto__card--btn {
     padding: 0 2rem;
   }
   main .productos__card {
-    width: 20%;
-    margin: 1rem;
+    width: 10%;
+    margin: 2rem;
     flex: 1 1 20%;
   }
 }
@@ -122,11 +121,6 @@ main .productos__card--pie .producto__card--btn {
   }
   main .productos {
     padding: 0 10rem;
-  }
-  main .productos__card {
-    width: 10%;
-    margin: 2rem;
-    flex: 1 1 20%;
   }
 }
 

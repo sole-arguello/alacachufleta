@@ -1,0 +1,10 @@
+@mixin estilos($margin, $padding, $radius){
+    margin: $margin;
+    padding: $padding;
+    border-radius: $radius;
+}
+
+@mixin flex($direccion){
+    display: flex;
+    flex-direction: $direccion;
+}
