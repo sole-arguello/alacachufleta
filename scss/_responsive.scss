@@ -1,8 +1,5 @@
-/* menor igual 576px*/
-// @media only screen and (max-width: 576px){
 
-// }
-/* menor igual 768px*/
+/* mayor igual 768px*/
 @media only screen and (min-width: 768px){
     .header{
         &__nav{
@@ -94,8 +91,8 @@
         &__nav{
             &--container{
                 &-logo{
-                    width: 8%;
-                    height: 8%;
+                    width: 5%;
+                    height: 5%;
                 }
                 &-menu{
                     font-size: 2rem;
@@ -117,25 +114,3 @@
 }
 
 
-
-
-
-
-// @include media-breakpoint-up(sm) {
-
-
-// }
-
-// /* mayor igual 768px*/
-// @include media-breakpoint-up(md) {}
-
-// /* mayor igual 992px*/
-// @include media-breakpoint-up(lg) {}
-
-// /* mayor igual 1200px*/
-// @include media-breakpoint-up(xl) {}
-
-// /* mayor igual 1400px*/
-// @include media-breakpoint-up(xxl) {}
-
-// @media (min-width: 1440px) and (max-width: 2000px){}
