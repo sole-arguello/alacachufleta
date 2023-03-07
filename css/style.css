@@ -135,5 +135,54 @@ main .seccion__productos .productos__card--pie .producto__card--btn {
     padding: 0 10rem;
   }
 }
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--encabezado .contModal__carrito--encabezado-title {
+  font-size: 2rem;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__img {
+  width: 100%;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__body .carrito__body--tituloPrecio .carrito__body--tituloPrecio-precio .precio__num {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__body .carrito__body--cantidad {
+  font-size: 1.2rem;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__body .carrito__body--cantidad .carrito__body--cantidad-num {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__body .carrito__body--cantidad .carrito__pie--btnEliminar {
+  margin-left: 40px;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__pie--subTotal {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--body .carrito .carrito__pie--subTotal .carrito__pie--subTotal-num {
+  margin-left: 40px;
+  font-weight: 600;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-precio {
+  font-size: 1.5rem;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-precio .signo {
+  margin-left: 40px;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-precio .numero {
+  font-weight: 600;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-botones {
+  display: flex;
+}
+.contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-botones .btnConfirmar {
+  padding: 0 5px;
+  margin-left: 3px;
+}
 
 /*# sourceMappingURL=style.css.map */

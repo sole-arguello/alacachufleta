@@ -193,23 +193,34 @@ const pintarProductosEnCarrito = () =>{
         const {id, precio, titulo, cantidad, img} = producto
         //INYECTO LOS PRODUCTOS EN EL DOM DEL CARRITO
         const contItemsCarrito = document.createElement("div")
-        contItemsCarrito.classList.add("carrito__body", "carritoBody")
+        contItemsCarrito.classList.add("carrito")
         contItemsCarrito.innerHTML = `
-            // <img class="body__img" src="${img }">
-            // <div class="body__info">
-            //     <p class="body__producto pt-lg-5 fs-5">${titulo}</P>
-            //     <p class="body__precio  pt-lg-5 fs-5">Precio: <span class="fw-semibold">$${precio}</span></p>          
-        
-            //     <div class="body__cant  pt-lg-5 d-flex">
-            //         <span id="restar${id}" class="restar pt-2" ><i class="bi bi-dash-square"></i></span>
-            //         <span  class="num px-2 fs-3 pb-5" id="cantidad">${cantidad}</span> 
-            //         <span id ="sumar${id}" class="signos pt-2" ><i class="bi bi-plus-square"></i></span>
-            //     </div>
-            //     <p class="body__subtototal pt-lg-5 fs-5">Sub-total: <span class="fw-semibold text-center" id="cantidad"> $${cantidad * precio}</span></p>
+        <hr>
+        <img class="carrito__img" src="${img}">
+
+        <div class="carrito__body">
+
+            <div class="carrito__body--tituloPrecio">
+                <p class="carrito__body--tituloPrecio-title">${titulo}</P>
+                <p class="carrito__body--tituloPrecio-precio">Precio: <span class="precio__num">$${precio}</span></p>              
+            </div>
             
-            // </div>
-            // <a id="eliminarDelCarrito${id}" class="body__btnElim"><i class="bi bi-trash3 icono"></i></a> 
-    
+            <div class="carrito__body--cantidad">
+                <span id="restar${id}" class="carrito__body--cantidad-resta" ><i class="bi bi-dash-square"></i></span>
+                <span  class="carrito__body--cantidad-num" id="cantidad">${cantidad}</span> 
+                <span id ="sumar${id}" class="carrito__body--cantidad-suma" ><i class="bi bi-plus-square"></i></span>
+            
+                <a id="eliminarDelCarrito${id}" class="carrito__pie--btnEliminar">
+                    <i class="bi bi-trash3"></i>
+                </a>              
+            </div>
+
+        </div>
+        
+        <p class="carrito__pie--subTotal">Sub-total: 
+            <span class="carrito__pie--subTotal-num" id="cantidad"> $${cantidad * precio}</span>
+        </p>
+                  
         `
         contenedorCarrito.appendChild(contItemsCarrito)
         //por cada click aumenta el numero del carrito

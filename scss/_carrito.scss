@@ -1,0 +1,70 @@
+.contModal{
+    .contModal__cont{
+        .contModal__carrito{
+            .contModal__carrito--encabezado{
+                .contModal__carrito--encabezado-title{
+                    font-size: 2rem;
+                }
+            }
+            .contModal__carrito--body{
+                .carrito{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-bottom: 30px;
+                    .carrito__img{
+                        width: 100%;
+                    }
+                    .carrito__body{
+                        .carrito__body--tituloPrecio{
+                            .carrito__body--tituloPrecio-precio{
+                                .precio__num{
+                                    margin-left: 1rem;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .carrito__body--cantidad{
+                            font-size: 1.2rem;
+                            .carrito__body--cantidad-num{
+                                font-size: 1.5rem;
+                                padding: 0 10px;
+                            }
+                            .carrito__pie--btnEliminar{
+                                margin-left: 40px;
+                            }
+                        }
+                    }
+                    .carrito__pie--subTotal{
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                        .carrito__pie--subTotal-num{
+                            margin-left: 40px;
+                            font-weight: 600;
+                        }
+                    }
+                    
+                }
+    
+            }
+            .contModal__carrito--footer{
+                .contModal__carrito--footer-precio{
+                    font-size: 1.5rem;
+                    .signo{
+                        margin-left: 40px;
+                    }
+                    .numero{
+                        font-weight: 600;
+                    }
+                }
+                .contModal__carrito--footer-botones{
+                    display: flex;
+                    .btnConfirmar{
+                        padding: 0 5px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}

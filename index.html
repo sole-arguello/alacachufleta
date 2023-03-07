@@ -65,26 +65,61 @@
     </header>
     
     <!-- inicio del Modal -->
-    <div class="carrito modal fade" id="miModal" tabindex="-1" aria-labelledby="#modalTitle" aria-hidden="true">
-        <div class="carrito__cont modal-dialog modal-xl">
-        <div class="carrito__cont--cont modal-content">
-            <div class="carrito__cont--cont-header modal-header">
-            <h5 class="carrito__title modal-title fs-3" id="#modalTitle">Su Carrito</h5>
-            <button type=" button" class="carrito__btnClose btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="carrito__cont--cont-body modal-body" id="carritoContenedor">
-            <!--  aqui va la carga de productos al caarrito desde js  -->
+    <div class="contModal modal fade" id="miModal" tabindex="-1" aria-labelledby="#modalTitle" aria-hidden="true">
+        <div class="contModal__cont modal-dialog modal-sm">
+          <div class="contModal__carrito modal-content">
 
-            </div>
-            
-            <div class="carrito__cont--cont-footer modal-footer justify-content-between">
-            <p class="footer__precio fw-bold fs-3">Precio Total: $ <span id="precioTotal">0</span> </p>
-            <div class="footer__botones">
-                <button id="vaciarCarrito" type="button" class="footer__btnVaciar btn btn-danger">Vaciar Carrito</button>
-                <button id="confirmarCompra" type="button" class="footer__btnConfirmar btn btn-secondary">Confirmar Compra</button>
-            </div>
-            </div>
-        </div>
+              <div class="contModal__carrito--encabezado modal-header">
+                <h5 class="contModal__carrito--encabezado-title modal-title" id="#modalTitle">Su Carrito</h5>
+              </div>
+
+              <div class="contModal__carrito--body modal-body" id="carritoContenedor">
+              <!--  aqui va la carga de productos al caarrito desde js  -->
+                <!-- <div class="carrito">
+                    <img class="carrito__img" src="${img}">
+
+                    <div class="carrito__body">
+
+                        <div class="carrito__body--tituloPrecio">
+                            <p class="carrito__body--tituloPrecio-title">${titulo}</P>
+                            <p class="carrito__body--tituloPrecio-precio">Precio: <span class="precio__num">$${precio}</span></p>              
+                        </div>
+                        
+                        <div class="carrito__body--cantidad">
+                            <span id="restar${id}" class="carrito__body--cantidad-resta" ><i class="bi bi-dash-square"></i></span>
+                            <span  class="carrito__body--cantidad-num" id="cantidad">${cantidad}</span> 
+                            <span id ="sumar${id}" class="carrito__body--cantidad-suma" ><i class="bi bi-plus-square"></i></span>
+                        
+                            <a id="eliminarDelCarrito${id}" class="carrito__pie--btnEliminar">
+                              <i class="bi bi-trash3"></i>
+                            </a>                         
+                          </div>
+
+                    </div>
+
+                    <div calss="carrito__pie">
+
+                        <p class="carrito__pie--subTotal">Sub-total: 
+                          <span class="carrito__pie--subTotal-num" id="cantidad"> $${cantidad * precio}</span>
+                        </p>        
+                    
+                    </div>   
+                </div> -->
+
+              </div>
+              
+              <div class="contModal__carrito--footer modal-footer justify-content-between">
+                <p class="contModal__carrito--footer-precio">Precio Total: 
+                  <span class="signo">$</span> 
+                  <span id="precioTotal" class="numero"> 0</span> 
+                </p>
+                <div class="contModal__carrito--footer-botones">
+                    <button id="vaciarCarrito" type="button" class="btnVaciar btn btn-danger">Vaciar Carrito</button>
+                    <button id="confirmarCompra" type="button" class="btnConfirmar btn btn-secondary">Confirmar Compra</button>
+                </div>
+              </div>
+              
+          </div>
         </div>
     </div>
     <!-- fin del Modal -->
