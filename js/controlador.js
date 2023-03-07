@@ -34,7 +34,7 @@ let carrito = []
 
 //ASINCRONICA por medio de fetch accedo al JSON
 
-fetch("../db.json")
+fetch("./db.json")
     .then((res) => res.json())
     .then((data) => {
         //console.log(data)
@@ -87,7 +87,15 @@ const alertaAgregarProductos = () => {
 
 //FUNCION ALERTA BOTON CONFIRMAR COMPRA
 const alertaConfirmarCompra = () =>{
-    swal("Gracias por su compra!");
+    
+    if(carrito.length == 0){
+       // console.log(carrito)
+        swal("El carrito esta vacio, ingrese productos");
+    }else{
+       // console.log(carrito)
+        swal("Gracias por su compra!");
+    }
+
 }
 //FUNCION DE ELIMINAR PRODUCTO DE A UNO DENTRO DEL CARRITO 
 function eliminarDelCarrito(id){
