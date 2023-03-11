@@ -1,0 +1,27 @@
+main{
+    .seccion__banner{
+        .banner__img{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-top: 20%;
+            box-shadow: map-get($sombras, sombra-2);
+            width: 100%;
+            height: 500px;
+            /*---- responsive ----*/
+            @include media-up(md){
+                padding-top: 15%;
+                height: 550px;
+            }
+            @include media-up(xl){
+                padding-top: 10%;
+            }
+            @include media-up(xxl){
+                height: 700px;
+            }
+            @include media-up(max-2000){
+                height: 900px;
+            }
+        }
+    }
+}

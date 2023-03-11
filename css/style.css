@@ -1,3 +1,8 @@
+/*---- responsive ----*/
+/*---- responsive ----*/
+.header {
+  top: 0;
+}
 .header__nav {
   background: rgb(250, 243, 229);
   box-shadow: 0px 2px 5px rgb(154, 153, 153);
@@ -6,23 +11,84 @@
   border-radius: 100%;
   width: 20%;
   height: 20%;
+  /*---- responsive ----*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 768px) {
+  .header__nav--container-logo {
+    width: 15%;
+    height: 15%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__nav--container-logo {
+    width: 12%;
+    height: 12%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav--container-logo {
+    width: 10%;
+    height: 10%;
+  }
 }
 .header__nav--container-menu {
   font-size: 1.5rem;
+  /*---- responsive ----*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1700px) {
+  .header__nav--container-menu {
+    font-size: 2rem;
+  }
 }
 .header__nav--container-menu .btnCarrito {
   background: rgb(250, 243, 229);
 }
 
-main {
+main .seccion__productos {
   margin-top: 20%;
+  margin-bottom: 5%;
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__productos {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 main .seccion__productos .titulo {
   margin-left: 2rem;
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__productos .titulo {
+    font-size: 4rem;
+  }
 }
 main .seccion__productos .categoria {
   font-size: 2rem;
   text-align: center;
+}
+main .seccion__productos .productos {
+  /*---- responsive ----*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 768px) {
+  main .seccion__productos .productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .seccion__productos .productos {
+    padding: 0 3rem;
+  }
 }
 main .seccion__productos .productos__card {
   width: 70%;
@@ -32,6 +98,21 @@ main .seccion__productos .productos__card {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+  /*---- responsive ----*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 768px) {
+  main .seccion__productos .productos__card {
+    max-width: 45%;
+    margin: 1rem;
+    flex: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__productos .productos__card {
+    max-width: 20%;
+  }
 }
 main .seccion__productos .productos__card--img {
   border-radius: 10px 10px 0 0;
@@ -55,86 +136,26 @@ main .seccion__productos .productos__card--pie .producto__card--btn {
   width: 45%;
   border-radius: 5%;
   background: rgb(240, 225, 200);
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
 }
-
-/* menor igual 768px*/
-@media only screen and (min-width: 768px) {
-  .header__nav--container-logo {
-    width: 15%;
-    height: 15%;
+@media screen and (min-width: 1200px) {
+  main .seccion__productos .productos__card--pie .producto__card--btn {
+    width: 70%;
   }
-  main .seccion__productos .productos {
-    display: flex;
-    padding: 0 2rem;
-    flex-wrap: wrap;
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__productos .productos__card--pie .producto__card--btn {
+    width: 60%;
   }
-  main .seccion__productos .productos__card {
-    width: 30%;
-    margin: 1rem;
-    flex: 1 1 45%;
-  }
+}
+@media screen and (min-width: 2000px) {
   main .seccion__productos .productos__card--pie .producto__card--btn {
     width: 50%;
   }
 }
-/* mayor igual 992px*/
-/* mayor igual 1200px*/
-@media only screen and (min-width: 1200px) {
-  .header__nav--container-logo {
-    width: 12%;
-    height: 12%;
-  }
-  main {
-    margin-top: 15%;
-  }
-  main .seccion__productos .categoria {
-    font-size: 2.5rem;
-  }
-  main .seccion__productos .productos {
-    padding: 0 5rem;
-  }
-  main .seccion__productos .productos__card {
-    width: 19%;
-    margin: 1rem;
-    flex: 1 1 19%;
-  }
-}
-/* mayor igual 1400px*/
-@media only screen and (min-width: 1400px) {
-  .header__nav--container-logo {
-    width: 10%;
-    height: 10%;
-  }
-  main .seccion__productos .productos {
-    padding: 0 2rem;
-  }
-  main .seccion__productos .productos__card {
-    width: 10%;
-    margin: 2rem;
-    flex: 1 1 20%;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2000px) {
-  .header__nav--container-logo {
-    width: 5%;
-    height: 5%;
-  }
-  .header__nav--container-menu {
-    font-size: 2rem;
-  }
-  main {
-    margin-top: 10%;
-  }
-  main .seccion__productos .titulo {
-    font-size: 3rem;
-  }
-  main .seccion__productos .categoria {
-    font-size: 3.5rem;
-  }
-  main .seccion__productos .productos {
-    padding: 0 10rem;
-  }
-}
+
 .contModal .contModal__cont .contModal__carrito .contModal__carrito--encabezado .contModal__carrito--encabezado-title {
   font-size: 2rem;
 }
@@ -183,6 +204,226 @@ main .seccion__productos .productos__card--pie .producto__card--btn {
 .contModal .contModal__cont .contModal__carrito .contModal__carrito--footer .contModal__carrito--footer-botones .btnConfirmar {
   padding: 0 5px;
   margin-left: 3px;
+}
+
+main .seccion__banner .banner__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20%;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 500px;
+  /*---- responsive ----*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 768px) {
+  main .seccion__banner .banner__img {
+    padding-top: 15%;
+    height: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__banner .banner__img {
+    padding-top: 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__banner .banner__img {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  main .seccion__banner .banner__img {
+    height: 900px;
+  }
+}
+
+main .seccion__pagos {
+  padding: 15% 0;
+  background: rgb(248, 248, 239);
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 992px) {
+  main .seccion__pagos {
+    padding: 10% 0;
+    margin-top: 5%;
+  }
+}
+main .seccion__pagos .pagos__titulo {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__pagos .pagos__titulo {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__pagos .pagos__titulo {
+    font-size: 4rem;
+  }
+}
+main .seccion__pagos .pagos__contenedor {
+  text-align: center;
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 992px) {
+  main .seccion__pagos .pagos__contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__pagos .pagos__contenedor {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__pagos .pagos__contenedor {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  main .seccion__pagos .pagos__contenedor {
+    padding: 0 8rem;
+  }
+}
+main .seccion__pagos .pagos__contenedor .pago__contenedor--info {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 992px) {
+  main .seccion__pagos .pagos__contenedor .pago__contenedor--info {
+    margin-top: 8%;
+    margin-right: 20px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__pagos .pagos__contenedor .pago__contenedor--info {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__pagos .pagos__contenedor .pago__contenedor--info {
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__pagos .pagos__contenedor .pago__contenedor--info {
+    width: 70%;
+  }
+}
+main .seccion__pagos .pagos__contenedor .pago__contenedor--info i .icono {
+  padding-left: 5px;
+}
+main .seccion__pagos .pagos__contenedor .pago__contenedor--img {
+  margin-top: 10px;
+  width: 70%;
+  height: 360px;
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__pagos .pagos__contenedor {
+    height: 1000px;
+  }
+}
+
+main .seccion__preguntas {
+  padding: 10% 0;
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__preguntas {
+    padding: 5% 0;
+  }
+}
+main .seccion__preguntas .preguntas__titulo {
+  padding: 5% 0;
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__preguntas .preguntas__titulo {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__preguntas .preguntas__titulo {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  main .seccion__preguntas .preguntas__titulo {
+    font-size: 3rem;
+  }
+}
+main .seccion__preguntas .preguntas__contenedor {
+  font-size: 1.2rem;
+  /*--- verifico que la medida exista ---*/
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__preguntas .preguntas__contenedor {
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__preguntas .preguntas__contenedor {
+    font-size: 1.8rem;
+  }
+}
+main .seccion__preguntas .preguntas__contenedor .preguntas__pregunta {
+  margin-left: 3rem;
+  font-weight: 600;
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1400px) {
+  main .seccion__preguntas .preguntas__contenedor .preguntas__pregunta {
+    font-size: 1.8rem;
+  }
+}
+main .seccion__preguntas .preguntas__contenedor .preguntas__respuesta {
+  margin-right: 1.5rem;
+  margin-left: 3.5rem;
+}
+
+main .seccion__footer {
+  background: rgb(250, 243, 229);
+  box-shadow: 34x 2px 5px rgb(154, 153, 153);
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 0;
+  /*--- verifico que la medida exista ---*/
+}
+@media screen and (min-width: 1200px) {
+  main .seccion__footer {
+    padding: 2% 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

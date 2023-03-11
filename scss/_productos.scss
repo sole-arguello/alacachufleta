@@ -1,20 +1,45 @@
 main{
-    margin-top: 20%;
-
     .seccion__productos{
+        margin-top: 20%;
+        margin-bottom: 5%;
+        @include media-up(xxxl){
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
         .titulo{
             margin-left: 2rem;
+            @include media-up(xxxl){
+                font-size: 4rem;
+            }
         }
         .categoria{
             font-size: 2rem;
             text-align: center;
         }
         .productos{
+            /*---- responsive ----*/
+            @include media-up(md){
+                @include justify(center);
+                flex-wrap: wrap;
+                padding: 0 2rem;
+            }
+            @include media-up(lg){
+                padding: 0 3rem;
+            }
             &__card{
                 width: 70%;
                 @include flex(column);
                 @include estilos(15px auto, 10px, 10px);
                 box-shadow: map-get($sombras, sombra-2 );
+                /*---- responsive ----*/
+                @include media-up(md){
+                    max-width: 45%;
+                    margin: 1rem;
+                    flex: 45%;
+                }
+                @include media-up(xl){
+                    max-width: 20%;
+                }
                 &--img{
                 border-radius: 10px 10px 0 0;
                 }
@@ -37,6 +62,15 @@ main{
                         width: 45%;
                         border-radius: 5%;
                         background: map-get($fondos, fondo-2 );
+                        @include media-up(xl){
+                            width: 70%;
+                        }
+                        @include media-up(xxxl){
+                            width: 60%;
+                        }
+                        @include media-up(max-2000){
+                            width: 50%;
+                        }
                     }
                 }
             }

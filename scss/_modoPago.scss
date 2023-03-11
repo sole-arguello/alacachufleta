@@ -1,0 +1,72 @@
+main{
+    .seccion__pagos{
+        padding: 15% 0;
+        background: map-get($fondos, fondo-3);
+        @include media-up(lg){
+            padding: 10% 0;
+            margin-top: 5%;
+        }
+       .pagos__titulo{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        @include media-up(xl){
+            font-size: 3rem;
+         }
+        @include media-up(xxxl){
+            font-size: 4rem;
+        }
+       }
+       .pagos__contenedor{
+            text-align: center;
+            @include media-up(lg){
+                @include direction-Justify(row-reverse, space-around);
+                padding: 0 2rem;
+            }
+            @include media-up(xxl){
+                padding: 0 3rem;
+            }
+            @include media-up(xxl){
+                padding: 0 4rem;
+            }
+            @include media-up(max-2000){
+                padding: 0 8rem;
+            }
+            .pago__contenedor--info{
+                margin-top: 5%;
+                font-size: 1.5rem;
+                font-style: italic;
+                @include flex(column);
+                @include media-up(lg){
+                    margin-top: 8%;
+                    margin-right: 20px;
+                    width: 50%;
+                }
+                @include media-up(xl){
+                    font-size: 2rem;
+                 }
+                @include media-up(xxl){
+                    font-size: 2.5rem;
+                    margin-top: 5%;
+                }
+                @include media-up(xxxl){
+                    width: 70%;
+                }
+                i{
+                    .icono{
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .pago__contenedor--img{
+                margin-top: 10px;
+                width: 70%;
+                height: 360px;
+            }
+            @include media-up(xxxl){
+                height: 1000px;
+            }
+
+       }
+ 
+    }
+}

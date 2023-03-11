@@ -1,6 +1,7 @@
 $fondos: (
     fondo-1: rgb(250, 243, 229),
-    fondo-2: rgb(240, 225, 200)
+    fondo-2: rgb(240, 225, 200),
+    fondo-3: rgb(248, 248, 239)
 );
 
 $bordes: (
@@ -13,9 +14,19 @@ $color-text: (
 
 $sombras: (
     sombra-1: 0px 2px 5px rgb(154, 153, 153),
-    sombra-2: 2px 6px 3px 3px rgba(0, 0, 0, 0.3)
+    sombra-2: 2px 6px 3px 3px rgba(0, 0, 0, 0.3),
+    sombra-3: 34x 2px 5px rgb(154, 153, 153),
 );
 
 $efectos: (
 
+);
+/*---- responsive ----*/
+$breackPoints: (
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1700px,
+    max-2000: 2000px
 );

@@ -1,0 +1,12 @@
+main{
+    .seccion__footer{
+        background: map-get($fondos, fondo-1);
+        box-shadow: map-get($sombras, sombra-3);
+        font-size: 2rem;
+        text-align: center;
+        padding: 5% 0;
+        @include media-up(xl){
+            padding: 2% 0;
+        }
+    }
+}

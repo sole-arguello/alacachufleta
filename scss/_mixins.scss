@@ -13,3 +13,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin direction-Justify($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+/*---- responsive ----*/
+@mixin media-up($breackpoint) {
+    /*--- verifico que la medida exista ---*/
+    @if map-has-key($breackPoints, $breackpoint){
+        @media screen and (min-width: map-get($breackPoints, $breackpoint)){
+            @content;
+        }
+    } @else {
+        @warn "El valor '#{ $breackpoint }' no ha sido declarado como breakpoint";
+    }
+}
+
