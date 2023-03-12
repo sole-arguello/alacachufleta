@@ -127,18 +127,21 @@
         </div>
     </div>
     <!-- fin del Modal -->
-    <a  name="inicio"></a>
+    
 <main>
-  
+  <a  name="inicio"></a>
+
   <section class="seccion__banner">
     <img class="banner__img" src="./img/banner.jpg" alt="">
   </section>
 
   <a name="productos"></a>
 
-  <section class="seccion__productos" id="">
-    <h1 class="titulo" id="">Nuestros Productos</h1>
-    <p class="categoria" id="tituloCategoria"></p>
+  <section class="seccion__productos">
+    <h1 class="titulo">Nuestros Productos</h1>
+    <p class="categoria" id="tituloCategoria">
+      <!-- el titulo lo traigo del js segu7n la categoria que elija -->
+    </p>
     <div class="productos" id="cardProductos">
 
       <!-- aqui van las card desde el js -->
@@ -150,20 +153,10 @@
 
   <section class="seccion__pagos">
     <h2 class="pagos__titulo">Formas de Pago</h2>
-    <div class="pagos__contenedor">
-
-      <img class="pago__contenedor--img" src="./img/modo-de-pago.png" alt="">
-      
-      <div class="pago__contenedor--info">
-
-        <i class="bi bi-cash-coin"><b class="icono">Efectivo</b></i>
-        <i class="bi bi-bank"><b class="icono">Transferencia Bancaria</b></i>
-        <i class="bi bi-phone-vibrate-fill"><b class="icono">Mercado Pago</b></i>
-        <i class="bi bi-wallet2"><b class="icono">Pago Facil - Rapipago</b></i>
-
-      </div>    
+    <div class="pagos__contenedor" id="pagos">
+      <!-- Agrego la seccion desde js -->
     </div>
-
+  
   </section>
 
   <a name="preguntas"></a>
@@ -171,53 +164,13 @@
   <section class="seccion__preguntas">
 
     <h2 class="preguntas__titulo">Preguntas frecuentes</h2>
-    <div class="preguntas__contenedor">
-
-      <p class="preguntas__pregunta">¿Como realizo mi compra?</p>
-      <p class="preguntas__respuesta">
-       - Tenemos un Watsap para que puedas consultar modelo producto disponible y stock.<br>
-       - Una vez comfirmado el disponible, al confirmar la compra seras direccionado a un formulario
-       donde completaras unos datos, y te enviaremos un link de pago para concretar la compra.<br>
-       - Luego te informaremos cuando retirar el producto.
-      </p>
-
-      <p class="preguntas__pregunta">¿Que formas de pago reciben?</p>
-      <p class="preguntas__respuesta">
-       - Recibimos efectivo, tarjetas de Debito, Credito o Transferencia bancaria, 
-       tambien con link de pago en Pago Facil o Rapipagp
-      </p>
-      
-      <p class="preguntas__pregunta">¿Como recibo mi compra?</p>
-      <p class="preguntas__respuesta">
-       - Una vez abonado el producto, queda disponible para ser retirado en sucursal.<br>
-       - Por el momento no comtamos con envio.
-      </p>
-      <p class="preguntas__pregunta">¿Tiene cambio?</p>
-      <p class="preguntas__respuesta">
-       - ¡Si! Al momento de retirar si no estas conforme podes realizar el 
-       cambio por otro producto, ya sea abonando la diferencia o por otro igual.
-      </p>
+    <div class="preguntas__contenedor" id="preguntas">
+      <!-- Agregado la seccion desde el js -->
     </div>
   </section>
 
-  <footer class="seccion__footer">
-    <div class="footer__container">
-      <p>AlaCachufleta</p>
-      <a class="footer__container--redes" href="#"
-        ><i class="fa-brands fa-whatsapp"></i
-      ></a>
-      <a class="footer__container--redes" href="#"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a class="footer__container--redes" href="#"
-        ><i class="fa-brands fa-facebook"></i
-      ></a>
-    </div>
-
-    <p>
-      @2023 | Creada por
-      <a class="autor" href="#">Arguello Soledad</a>
-    </p>
+  <footer class="seccion__footer" id="footer">
+    <!-- Agregado footer desde el js -->
   </footer>
 
 </main> 
@@ -233,5 +186,8 @@
     <!-- archivos javascript -->
     <script src="./js/array.js"></script>
     <script src="./js/controlador.js"></script>
+    <script src="./js/preguntas.js"></script>
+    <script src="./js/pagos.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
 </html>
